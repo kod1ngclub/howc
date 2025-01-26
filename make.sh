@@ -1,7 +1,7 @@
 # target file
 input=docs/howc.md
 output=build/index.html
-head=head.html
+head=build/head.html
 
 mkdir build
 touch $head
