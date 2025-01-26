@@ -10,4 +10,4 @@
 
 **howc** is under **MIT license**
 
-[goto]: https://www.example.com
+[goto]: https://howc.vercel.app
