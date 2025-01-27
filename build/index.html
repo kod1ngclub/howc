@@ -226,7 +226,7 @@
 <h1 id="howc-c-coding-standard-of-kod1ngclub">Howc: C coding standard of
 Kod1ngclub</h1>
 <blockquote>
-<p>v0.2.0</p>
+<p>v0.2.1</p>
 </blockquote>
 <h2 id="index">Index</h2>
 <ul>
@@ -245,9 +245,6 @@ Kod1ngclub</h1>
 <li>Defination - Struct</li>
 <li>Defination - Union</li>
 <li>Defination - Enum</li>
-</ul>
-<hr />
-<ul>
 <li>Appendix - When to use C</li>
 <li>Appendix - Clean Arch in C</li>
 </ul>
@@ -310,10 +307,17 @@ example</li>
 <code>#elif</code>, <code>#endif</code>, <code>#ifdef</code> and so
 on</li>
 </ul>
-<p>```c int main(void) { printf(“Hello, World!”); printf(“Halo,
-World!”); printf(“Hiiillo, Word!”); printf(“Hao, Wold”);</p>
-<p>#if 1 printf(“If preprocessor passed!”); #endif</p>
-<pre><code>return 0;</code></pre>
-<p>}</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">(</span><span class="dt">void</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Hello, World!&quot;</span><span class="op">);</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Halo, World!&quot;</span><span class="op">);</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Hiiillo, Word!&quot;</span><span class="op">);</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;Hao, Wold&quot;</span><span class="op">);</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#if 1</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">&quot;If preprocessor passed!&quot;</span><span class="op">);</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="pp">#endif</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
 </body>
 </html>
