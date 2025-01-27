@@ -1,6 +1,6 @@
 # Howc: C coding standard of Kod1ngclub
 
-> v0.4.0
+> v0.4.2
 
 ## Index
 
