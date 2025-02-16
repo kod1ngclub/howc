@@ -226,7 +226,7 @@
 <h1 id="howc-c-coding-standard-of-kod1ngclub">Howc: C coding standard of
 Kod1ngclub</h1>
 <blockquote>
-<p>v1.4.0</p>
+<p>v1.5.0</p>
 </blockquote>
 <h2 id="index">Index</h2>
 <ul>
@@ -595,19 +595,25 @@ codes</li>
 <div class="sourceCode" id="cb21"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="kw">struct</span> <span class="op">{</span> <span class="dt">const</span> UserId data<span class="op">;</span> <span class="op">}</span> OwnerId_t<span class="op">;</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="kw">struct</span> <span class="op">{</span> <span class="dt">const</span> UserId data<span class="op">;</span> <span class="op">}</span> TesterId_t<span class="op">;</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> StartAutoTest<span class="op">(</span><span class="dt">const</span> OwnerId_t owner<span class="op">,</span> <span class="dt">const</span> TesterId_t tester<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">...</span></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co"> * ==== Situtation</span></span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="co"> * - Programmer submit a code to tester</span></span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="co"> * - Tester runs &#39;AutoTest&#39;</span></span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="co"> * - If problem occurs, tell it to that sprogrammer</span></span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a><span class="co"> */</span></span></code></pre></div>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> StartAutoTest<span class="op">(</span><span class="dt">const</span> OwnerId_t owner<span class="op">,</span> <span class="dt">const</span> TesterId_t tester<span class="op">);</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"> * ==== Situtation</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="co"> * - Here is header file</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="co"> * - Programmer submit a code to tester</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="co"> * - Tester runs &#39;AutoTest&#39;</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="co"> * - If problem occurs, tell it to that programmer</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="co"> */</span></span></code></pre></div>
 <h2 id="identifier---private">Identifier - Private</h2>
-<p>If developing library and should define private-things, use
-<code>__name__</code>, <code>__s_name__</code>, and
-<code>__g_name__</code></p>
+<ul>
+<li>If need to define private-things in library, use
+<code>__name__</code> <code>__s_name__</code> <code>__g_name__</code>
+<code>__name_t__</code> and so on</li>
+<li>If <code>struct</code> <code>enum</code> <code>typedef</code> and so
+on are only used in a certain source file, define it in that source file
+<ul>
+<li>Even if in this case, follow aforesaid convention</li>
+</ul></li>
+</ul>
 </body>
 </html>
