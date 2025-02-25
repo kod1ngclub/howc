@@ -2,5 +2,10 @@
 env
 venv
 
+# ==== javascript modules
+node_modules
+package-lock.json
+package.json
+
 # ==== build
 build
